@@ -1,0 +1,254 @@
+body { 
+    margin: 0; 
+    font-family: 'Poppins', sans-serif; 
+    background: #0f0f1a; 
+    color: white; 
+} 
+
+header { 
+    background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') center/cover; 
+    padding: 100px 20px; text-align: center; 
+
+} header h1 { 
+    font-size: 48px; 
+    margin: 0; 
+
+} header p { 
+    font-size: 18px;
+
+} nav { 
+    background: #1a1a2e; 
+    padding: 10px; 
+    text-align: center; 
+
+} nav a { 
+    color: white; 
+    margin: 0 15px; 
+    text-decoration: none; 
+    font-weight: 600; 
+} 
+
+.container { 
+    display: flex; padding: 20px; 
+} 
+
+.content { 
+    flex: 3; 
+} 
+
+.card { 
+    background: #1a1a2e; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border-radius: 15px; 
+} 
+
+.sidebar { 
+    flex: 1; 
+    margin-left: 20px; 
+} 
+
+.box { 
+    background: #16213e; 
+    padding: 15px; 
+    border-radius: 15px; 
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;        
+    flex-wrap: wrap;  
+}  
+
+.box img {
+    width: 80px;  
+    height: auto;
+    border-radius: 10px;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+}
+
+.lyrics-box {
+    background: #1a1a2e; 
+    padding: 15px; 
+    border-radius: 15px; 
+    margin-bottom: 20px;
+    display: flex;
+    gap: 0px;        
+    flex-wrap: wrap; 
+}
+
+.tentang { 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 30px; 
+    padding: 20px; 
+    text-align: justify; 
+} 
+
+.tentang img { 
+    width: 400px; 
+    height: auto; 
+    border-radius: 15px; 
+} 
+
+.tentang h2 { 
+    font-size: 28px; 
+} 
+
+footer { 
+    text-align: center; 
+    padding: 15px; 
+    background: #1a1a2e; 
+}
+
+.song-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 ke samping */
+  gap: 20px;
+  padding: 20px;
+}
+
+.song-card {
+  background: #1a1a2e;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+}
+
+.song-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.song-card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.song-card audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.song-card.active {
+  border: 2px solid #00f5ff;
+  transform: scale(1.05);
+}
+
+/* ================= MOBILE VERSION (HP) ================= */
+@media (max-width: 768px) {
+
+  /* ===== HEADER ===== */
+  header {
+    padding: 60px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  /* ===== BLOG / HOME ===== */
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* ===== ABOUT ===== */
+  .tentang {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .tentang img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* ===== SONGS ===== */
+  .song-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .song-card h3 {
+    font-size: 14px;
+  }
+
+  /* ===== CONTACT ===== */
+  form {
+    padding: 10px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  /* ===== CV (INI YANG PALING PENTING) ===== */
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .right {
+    padding: 15px;
+  }
+
+  /* ===== GALLERY ===== */
+  .gallery-container {
+    justify-content: center;
+  }
+
+  .gallery-container img {
+    width: 45%;
+  }
+
+}

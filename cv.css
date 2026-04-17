@@ -1,0 +1,80 @@
+body { 
+    margin: 0; 
+    font-family: 'Poppins', sans-serif; background: #eee; 
+} 
+
+.cv-container { 
+    display: flex; 
+    flex-wrap: nowrap; /* ⬅️ WAJIB */
+    width: 100%; 
+    max-width: 1000px; 
+    margin: auto; 
+    background: white; 
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+.left { 
+    background: #8ba7e9; 
+    color: white; width: 35%; 
+    padding: 20px; text-align: center; 
+} 
+
+.profile { 
+    width: 100px; 
+    height: 120px; 
+    border-radius: 30%; 
+    margin-bottom: 10px; 
+} 
+
+.role { 
+    font-size: 14px; 
+    margin-bottom: 20px; 
+} 
+
+.left .section { 
+    text-align: left; 
+    margin-top: 20px; 
+}
+
+.right {
+    width: 65%;
+    padding: 20px;
+    color: black;
+}
+
+.section { 
+    margin-bottom: 20px; 
+} 
+
+h3 { 
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 5px; 
+}
+
+/* ALBUM SECTION */
+.album-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.album-link {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn-album {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #00f5ff, #6a5cff);
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-album:hover {
+  transform: scale(1.1);
+}
